@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`) VALUES
 ('huusy','Sy','Vu','123456','100000'),
-('nguyenngoclinh','linh','nguyenngoc','999999','999999'),
+('nguyenngoclam','Lam','Ngoc','999999','999999'),
 ('leonard_mccoy','Leonard','McCoy','hesDEADjim!','45000'),
 ('nyota_uhura','Nyota','Uhura','StarShine','39000'),
 ('montgomery_scott','Montgomery','Scott','ScottyDoesntKnow','1250'),
