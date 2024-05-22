@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`) VALUES
 ('huusy','Sy','Vu','123456','100000'),
-('mr_spock','Mr','Spock','0nlyL0g!c','99000'),
+('nguyenngoclinh','linh','nguyenngoc','999999','999999'),
 ('leonard_mccoy','Leonard','McCoy','hesDEADjim!','45000'),
 ('nyota_uhura','Nyota','Uhura','StarShine','39000'),
 ('montgomery_scott','Montgomery','Scott','ScottyDoesntKnow','1250'),
@@ -50,3 +50,11 @@ INSERT INTO `users` (`username`, `first_name`, `last_name`, `password`, `salary`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-- Table to drop in demo
+--
+
+CREATE TABLE IF NOT EXISTS `droptbl` (
+  `id` int
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
