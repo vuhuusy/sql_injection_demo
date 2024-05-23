@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         error_log("USERNAME:" . $user);
         $pass = $_POST['password'];
         error_log("PASSWORD:" . $pass);
-        $sql = "select concat(first_name, ' ', last_name) as name, salary from users where username = '$user' and password = '$pass'";
+        $sql = "select first_name, salary from users where username = '$user' and password = '$pass'";
         error_log("QUERY:" . $sql);
 
         if ($conn->multi_query($sql)) {

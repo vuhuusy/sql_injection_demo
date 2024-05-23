@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         error_log("USERNAME:" . $user);
         $pass = $_POST['password'];
         error_log("PASSWORD:" . $pass);
-        $sql = "SELECT concat(first_name, ' ', last_name) as name, salary FROM users WHERE username = ? AND password = ?";
+        $sql = "SELECT first_name as name, salary FROM users WHERE username = ? AND password = ?";
         error_log("QUERY:" . $sql);
         
         try {
